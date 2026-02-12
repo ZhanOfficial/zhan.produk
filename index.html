@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZHANOFFICIAL | Full Services List</title>
+    <title>ZHANOFFICIAL | High Quality Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
@@ -13,11 +13,12 @@
             width: 100%;
             min-height: 100vh;
             color: #fff;
-            /* Latar belakang gerak Biru-Ungu-Hitam */
+            /* Latar Belakang Gerak: Biru, Ungu, Hitam */
             background: linear-gradient(-45deg, #000000, #1a0033, #001233, #2e004f, #000000);
             background-size: 400% 400%;
             animation: gradientFlow 10s ease infinite;
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
         }
 
         @keyframes gradientFlow {
@@ -33,12 +34,12 @@
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
         }
 
-        .text-neon-blue { color: #00d4ff; text-shadow: 0 0 5px #00d4ff; }
-        .text-neon-purple { color: #9d00ff; text-shadow: 0 0 5px #9d00ff; }
+        .text-neon-blue { color: #00d4ff; text-shadow: 0 0 8px #00d4ff; }
+        .border-neon-purple { border-left: 4px solid #9d00ff; }
         
         .product-item {
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 8px 0;
+            padding: 10px 0;
         }
         .product-item:last-child { border-bottom: none; }
     </style>
@@ -51,147 +52,115 @@
 
     <div class="max-w-2xl mx-auto">
         
-        <div class="text-center mb-10 animate__animated animate__fadeInDown">
+        <header class="text-center mb-10 animate__animated animate__fadeInDown">
             <img src="https://files.catbox.moe/y553q3.jpg" alt="Logo Zhan" class="w-32 h-32 mx-auto rounded-full border-4 border-[#9d00ff] shadow-[0_0_20px_#9d00ff] mb-4">
             <h1 class="text-4xl font-black tracking-widest uppercase">ZHANOFFICIAL</h1>
-            <p class="text-neon-blue font-mono text-xs mt-2 tracking-[0.4em]">OPEN ALL SERVICES</p>
-        </div>
+            <p class="text-neon-blue font-mono text-xs mt-2 tracking-[0.4em]">ALL SERVICES OPEN NOW</p>
+        </header>
 
         <div class="space-y-6 animate__animated animate__fadeInUp">
             
-            <div class="glass p-6 rounded-2xl border-l-4 border-[#9d00ff]">
+            <section class="glass p-6 rounded-2xl border-neon-purple">
                 <h2 class="text-xl font-bold mb-4 flex items-center">📍 WHATSAPP SECTOR</h2>
-                <div class="space-y-2">
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">MURBAND WA</span>
-                        <span class="text-neon-blue font-bold text-sm">15k | 30k | 50k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">MURUNBAND WA</span>
-                        <span class="text-neon-blue font-bold text-sm">15k | 30k | 50k</span>
-                    </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">MURBAND WA</span>
+                    <span class="text-neon-blue font-bold">15k | 30k | 50k</span>
                 </div>
-            </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">MURUNBAND WA</span>
+                    <span class="text-neon-blue font-bold">15k | 30k | 50k</span>
+                </div>
+            </section>
 
-            <div class="glass p-6 rounded-2xl border-l-4 border-red-600">
+            <section class="glass p-6 rounded-2xl border-neon-purple">
                 <h2 class="text-xl font-bold mb-4 flex items-center">💀 CYBER TOOLS & EXPLOIT</h2>
-                <div class="space-y-2">
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">APK RANSOMWARE</span>
-                        <span class="text-neon-blue font-bold text-sm">M:10k | Adm:25k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">HACK KAMERA/GALERI</span>
-                        <span class="text-neon-blue font-bold text-sm">M:10k | Adm:25k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">DOXING SKILL</span>
-                        <span class="text-neon-blue font-bold text-sm">M:15k | Adm:30k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">APK BUG</span>
-                        <span class="text-neon-blue font-bold text-sm">M:5k | Adm:10k</span>
-                    </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">APK RANSOMWARE</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 10k | Adm: 25k</span>
                 </div>
-            </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">HACK KAMERA/GALERI</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 10k | Adm: 25k</span>
+                </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">DOXING SKILL</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 15k | Adm: 30k</span>
+                </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">MURAPK BUG</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 5k | Adm: 10k</span>
+                </div>
+            </section>
 
-            <div class="glass p-6 rounded-2xl border-l-4 border-blue-500">
+            <section class="glass p-6 rounded-2xl border-neon-purple">
                 <h2 class="text-xl font-bold mb-4 flex items-center">📈 SOCIAL MEDIA & OTHERS</h2>
-                <div class="space-y-2">
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">BAND TIKTOK</span>
-                        <span class="text-neon-blue font-bold text-sm">10k | 20k | 30k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">SUNTIK SOSMED</span>
-                        <span class="text-neon-blue font-bold text-sm">M:5k | Adm:10k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">NOKOS (MURNOK)</span>
-                        <span class="text-neon-blue font-bold text-sm">M:5k | Adm:10k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">LOGO DESIGN (MURLOG)</span>
-                        <span class="text-neon-blue font-bold text-sm">M:5k | Adm:10k</span>
-                    </div>
-                    <div class="product-item flex justify-between items-center">
-                        <span class="text-gray-300">UP PAYMENT</span>
-                        <span class="text-neon-blue font-bold text-sm">M:10k | Adm:20k</span>
-                    </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">BAND TIKTOK</span>
+                    <span class="text-neon-blue font-bold">10k | 20k | 30k</span>
                 </div>
-            </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">MURSOS</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 5k | Adm: 10k</span>
+                </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">NOKOS (MURNOK)</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 5k | Adm: 10k</span>
+                </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">LOGO DESIGN (MURLOG)</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 5k | Adm: 10k</span>
+                </div>
+                <div class="product-item flex justify-between">
+                    <span class="text-gray-300">UP PAYMENT</span>
+                    <span class="text-neon-blue font-bold text-xs">M: 10k | Adm: 20k</span>
+                </div>
+            </section>
 
-            <div class="glass p-6 rounded-2xl border-l-4 border-yellow-500">
-                <h2 class="text-xl font-bold mb-4 flex items-center">⚡ FUNCTION CLASS</h2>
-                <div class="grid grid-cols-3 gap-3 text-center">
-                    <div class="bg-gray-800/50 p-2 rounded-lg border border-gray-700">
-                        <p class="text-[10px] text-gray-400">PT</p>
+            <section class="glass p-6 rounded-2xl border-neon-purple">
+                <h2 class="text-xl font-bold mb-4">⚡ FUNCTION CLASS</h2>
+                <div class="grid grid-cols-3 gap-3">
+                    <div class="bg-gray-900/60 p-3 rounded-xl border border-gray-800 text-center">
+                        <p class="text-[10px] text-gray-500">PT</p>
                         <p class="font-bold text-neon-blue">10k</p>
                     </div>
-                    <div class="bg-gray-800/50 p-2 rounded-lg border border-gray-700">
-                        <p class="text-[10px] text-gray-400">OWN</p>
+                    <div class="bg-gray-900/60 p-3 rounded-xl border border-gray-800 text-center">
+                        <p class="text-[10px] text-gray-500">OWN</p>
                         <p class="font-bold text-neon-blue">15k</p>
                     </div>
-                    <div class="bg-gray-800/50 p-2 rounded-lg border border-gray-700">
-                        <p class="text-[10px] text-gray-400">TK</p>
+                    <div class="bg-gray-900/60 p-3 rounded-xl border border-gray-800 text-center">
+                        <p class="text-[10px] text-gray-500">TK</p>
                         <p class="font-bold text-neon-blue">20k</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
         </div>
 
-        <div class="mt-10 space-y-4 animate__animated animate__zoomIn">
-            <a href="https://wa.me/6283838202776?text=Halo%20Zhan,%20saya%20mau%20order" class="block w-full py-4 bg-[#00d4ff] text-black font-black text-center rounded-xl shadow-[0_0_15px_#00d4ff] hover:scale-105 transition-transform">
-                CONTACT WHATSAPP OWNER
+        <div class="mt-12 space-y-4 animate__animated animate__zoomIn">
+            <a href="https://wa.me/6283838202776?text=Halo%20Zhan,%20saya%20mau%20order" 
+               class="block w-full py-4 bg-[#00d4ff] text-black font-black text-center rounded-2xl shadow-[0_0_20px_#00d4ff] hover:brightness-125 transition-all">
+               CONTACT WHATSAPP OWNER
             </a>
-            <a href="https://t.me/zhan_store" class="block w-full py-4 bg-[#9d00ff] text-white font-black text-center rounded-xl shadow-[0_0_15px_#9d00ff] hover:scale-105 transition-transform">
-                JOIN TELEGRAM CHANNEL
+            <a href="https://t.me/zhan_store" 
+               class="block w-full py-4 bg-[#9d00ff] text-white font-black text-center rounded-2xl shadow-[0_0_20px_#9d00ff] hover:brightness-125 transition-all">
+               JOIN TELEGRAM CHANNEL
             </a>
         </div>
 
-        <p class="mt-10 text-center text-[10px] text-gray-500 tracking-[0.5em] font-bold">EST. 2026 BY ZHANOFFICIAL</p>
+        <footer class="mt-16 text-center text-[10px] text-gray-600 tracking-[0.6em] font-bold">
+            PRODUCT ZHANOFFICIAL &copy; 2026
+        </footer>
     </div>
 
     <script>
-        // Music Autoplay Trigger
+        // Memaksa lagu berputar saat ada interaksi pertama
         window.addEventListener('click', () => {
-            const music = document.getElementById('bgMusic');
-            music.play();
+            const audio = document.getElementById('bgMusic');
+            audio.play();
         }, { once: true });
     </script>
 </body>
-</html>                <img src="https://files.catbox.moe/y553q3.jpg" alt="Logo Zhan" class="w-32 h-32 mx-auto rounded-full border-4 border-[#9d00ff] shadow-[0_0_20px_#9d00ff] mb-4">
-                <div class="absolute bottom-5 right-2 bg-green-500 w-5 h-5 rounded-full border-2 border-black animate-pulse"></div>
-            </div>
-            <h1 class="text-4xl font-black tracking-widest uppercase">ZHANOFFICIAL</h1>
-            <p class="text-neon font-mono text-xs mt-2 uppercase tracking-[0.5em]">High-End Digital Solutions</p>
-        </div>
-
-        <div class="space-y-4 mb-10 animate__animated animate__fadeInUp">
-            
-            <div class="glass p-5 rounded-2xl border-neon card-hover">
-                <h3 class="font-bold text-lg text-white">📍 WHATSAPP SECTOR</h3>
-                <div class="flex justify-between text-sm text-gray-300 mt-1">
-                    <span>Murband / Murunband WA</span>
-                    <span class="text-[#00d4ff] font-bold">15k - 50k</span>
-                </div>
-            </div>
-
-            <div class="glass p-5 rounded-2xl border-neon card-hover">
-                <h3 class="font-bold text-lg text-white">💀 CYBER TOOLS & EXPLOIT</h3>
-                <div class="flex justify-between text-sm text-gray-300 mt-1">
-                    <span>APK Ransomware / Hack / Bug</span>
-                    <span class="text-[#00d4ff] font-bold">5k - 30k</span>
-                </div>
-            </div>
-
-            <div class="glass p-5 rounded-2xl border-neon card-hover">
-                <h3 class="font-bold text-lg text-white">📈 SOCIAL MEDIA</h3>
-                <div class="flex justify-between text-sm text-gray-300 mt-1">
-                    <span>TikTok / Suntik / Nokos</span>
-                    <span class="text-[#00d4ff] font-bold">5k - 30k</span>
-                </div>
+</html>>
             </div>
 
             <div class="glass p-5 rounded-2xl border-neon card-hover">
