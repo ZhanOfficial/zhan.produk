@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZHANOFFICIAL | Cyber Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* Animasi Background Bergerak */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background: linear-gradient(-45deg, #000000, #1a0033, #001233, #2e004f, #000000);
+            background-size: 400% 400%;
+            animation: gradientFlow 10s ease infinite;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Efek Kaca Transparan */
+        .glass {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+        }
+
+        /* Tombol WA & Tele */
+        .btn-order {
+            transition: all 0.3s ease;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+        
+        .btn-order:hover {
+            transform: scale(1.02);
+            filter: brightness(1.2);
+        }
+
+        .border-neon {
+            border-left: 4px solid #9d00ff; /* Warna Ungu Neon */
+        }
+        
+        .text-neon {
+            color: #00d4ff; /* Warna Biru Neon */
+            text-shadow: 0 0 5px #00d4ff;
+        }
+    </style>
+</head>
+<body class="p-6">
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="https://files.catbox.moe/z3d2mj.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="max-w-2xl w-full mx-auto py-10">
+        
+        <div class="text-center mb-10 animate__animated animate__fadeInDown">
+            <div class="relative inline-block">
+                <img src="https://files.catbox.moe/y553q3.jpg" alt="Logo Zhan" class="w-32 h-32 mx-auto rounded-full border-4 border-[#9d00ff] shadow-[0_0_20px_#9d00ff] mb-4">
+                <div class="absolute bottom-5 right-2 bg-green-500 w-5 h-5 rounded-full border-2 border-black animate-pulse"></div>
+            </div>
+            <h1 class="text-4xl font-black tracking-widest uppercase">ZHANOFFICIAL</h1>
+            <p class="text-neon font-mono text-xs mt-2 uppercase tracking-[0.5em]">High-End Digital Solutions</p>
+        </div>
+
+        <div class="space-y-4 mb-10 animate__animated animate__fadeInUp">
+            
+            <div class="glass p-5 rounded-2xl border-neon card-hover">
+                <h3 class="font-bold text-lg text-white">📍 WHATSAPP SECTOR</h3>
+                <div class="flex justify-between text-sm text-gray-300 mt-1">
+                    <span>Murband / Murunband WA</span>
+                    <span class="text-[#00d4ff] font-bold">15k - 50k</span>
+                </div>
+            </div>
+
+            <div class="glass p-5 rounded-2xl border-neon card-hover">
+                <h3 class="font-bold text-lg text-white">💀 CYBER TOOLS & EXPLOIT</h3>
+                <div class="flex justify-between text-sm text-gray-300 mt-1">
+                    <span>APK Ransomware / Hack / Bug</span>
+                    <span class="text-[#00d4ff] font-bold">5k - 30k</span>
+                </div>
+            </div>
+
+            <div class="glass p-5 rounded-2xl border-neon card-hover">
+                <h3 class="font-bold text-lg text-white">📈 SOCIAL MEDIA</h3>
+                <div class="flex justify-between text-sm text-gray-300 mt-1">
+                    <span>TikTok / Suntik / Nokos</span>
+                    <span class="text-[#00d4ff] font-bold">5k - 30k</span>
+                </div>
+            </div>
+
+            <div class="glass p-5 rounded-2xl border-neon card-hover">
+                <h3 class="font-bold text-lg text-white">⚡ FUNCTION CLASS</h3>
+                <div class="flex justify-between text-sm text-gray-300 mt-1">
+                    <span>PT / OWN / TK Func</span>
+                    <span class="text-[#00d4ff] font-bold">10k - 20k</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="space-y-4 animate__animated animate__zoomIn">
+            <a href="https://wa.me/6283838202776?text=Halo%20Admin%20ZhanOfficial,%20saya%20mau%20order" 
+               class="btn-order block w-full bg-[#00d4ff] text-black font-black py-4 rounded-xl text-center shadow-[0_0_15px_#00d4ff]">
+               CONTACT WHATSAPP OWNER
+            </a>
+
+            <a href="https://t.me/zhan_store" 
+               class="btn-order block w-full bg-[#9d00ff] text-white font-black py-4 rounded-xl text-center shadow-[0_0_15px_#9d00ff]">
+               JOIN TELEGRAM CHANNEL
+            </a>
+        </div>
+
+        <div class="mt-12 text-center">
+            <p class="text-gray-500 text-[10px] tracking-[0.4em] font-bold">
+                EST. 2026 BY ZHANOFFICIAL
+            </p>
+        </div>
+
+    </div>
+
+    <script>
+        window.addEventListener('click', function() {
+            var audio = document.getElementById('bgMusic');
+            audio.play();
+        }, { once: true });
+    </script>
+
+</body>
+</html>
